@@ -1,7 +1,9 @@
-import { useState } from "react";
+import Chai from "./chai";
 function App() {
   return (
     <>
+      <Chai />
+
       <h1>chai our code | Ajmeri Gudiya </h1>
       <p>
         This is my first React code, and I know how to create a new project

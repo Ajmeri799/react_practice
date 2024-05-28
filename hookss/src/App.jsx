@@ -19,6 +19,7 @@ function App() {
     }
   };
 
+  console.log("ajmeri");
   return (
     <>
       <h1>Chai aur React{counter}</h1>

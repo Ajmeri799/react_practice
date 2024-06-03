@@ -1,4 +1,3 @@
-import "./App.css";
 import UserContextProvider from "./Context/UserContextProvider";
 import Profile from "./component/Profile";
 import Login from "./component/Login";

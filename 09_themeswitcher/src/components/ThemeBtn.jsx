@@ -1,8 +1,9 @@
 import React from "react";
 import useTheme from "../context/Theme";
+
 function ThemeBtn() {
   const { themeMode, lightTheme, darkTheme } = useTheme();
-  const onChangeBtn = (e) => {
+  let onChangeBtn = (e) => {
     const darkModeStatus = e.currentTarget.checked;
     if (darkModeStatus) {
       darkTheme();
@@ -27,5 +28,4 @@ function ThemeBtn() {
     </label>
   );
 }
-
 export default ThemeBtn;

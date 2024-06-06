@@ -9,7 +9,7 @@ function App() {
   const [to, setTo] = useState("inr");
   const [convertedAmount, setconvertAmount] = useState(0);
   const currencyInfo = useCurrencyInfo(from);
-  const options = Object.keys(useCurrencyInfo);
+  const options = Object.keys(currencyInfo);
 
   const swap = () => {
     setTo(from);
@@ -24,7 +24,7 @@ function App() {
 
   return (
     <div
-      className="w-full h-screen flex flex-wrap justify-center items-center bg-cover bg-no-repeat"
+      className=" h-screen w-screen flex flex-wrap justify-center items-center bg-cover "
       style={{
         backgroundImage: `url('https://images.pexels.com/photos/3532540/pexels-photo-3532540.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2')`,
       }}

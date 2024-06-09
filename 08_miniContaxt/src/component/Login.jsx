@@ -27,7 +27,7 @@ function Login() {
         placeholder="password"
         onChange={(e) => setPassword(e.target.value)}
       />
-      <button onClick={handleSubmit}></button>
+      <button onClick={handleSubmit}>Click</button>
     </div>
   );
 }

@@ -24,6 +24,7 @@ function App() {
       .finally(() => setLoading(false));
   }, []);
 
+<<<<<<< HEAD
   return !loading ? (
     <div className="min-h-screen flex flex-wrap content-between bg-gray-400">
       <div className=" w-full block">
@@ -35,6 +36,16 @@ function App() {
       </div>
     </div>
   ) : null;
+=======
+  return (
+    <>
+      
+      <h1 className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </h1>
+    </>
+  );
+>>>>>>> 6746e2b2b65a18f128e1fab0749001327f6e3a4f
 }
 
 export default App;

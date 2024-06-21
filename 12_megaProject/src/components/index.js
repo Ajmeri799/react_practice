@@ -3,4 +3,18 @@ import Footer from "./Footer/Footer";
 import Container from "./container/Container";
 import Logo from "./Logo";
 import LogoutBtn from "./Header/LogoutBtn";
-export { Header, Footer, Container, Logo, LogoutBtn };
+import Button from "./Button";
+import Login from "./Login";
+import PostCard from "./PostCard";
+import Input from "./Input";
+export {
+  Header,
+  Footer,
+  Container,
+  Logo,
+  LogoutBtn,
+  Button,
+  Login,
+  PostCard,
+  Input,
+};

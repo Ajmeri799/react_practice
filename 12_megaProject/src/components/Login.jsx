@@ -5,11 +5,13 @@ import { Button, Input, Logo } from "./index";
 import { useDispatch } from "react-redux";
 import authService from "../appwrite/auth";
 import { useForm } from "react-hook-form";
+
 function Login() {
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
   const [error, setError] = useState("");
+
   const login = async (data) => {
     setError("");
     try {
@@ -47,10 +49,10 @@ function Login() {
           </Link>
         </p>
         {error && <p className="text-red-600 mt-8 text-center">{error}</p>}
-        <form>
+        <form onSubmit={handleSubmit(login)} className="mt-8">
           <div className="space-y-5">
             <Input
-              label="Email:"
+              label="Email: "
               placeholder="Enter your email"
               type="email"
               {...register("email", {
@@ -63,14 +65,14 @@ function Login() {
               })}
             />
             <Input
-              label="password :"
+              label="Password: "
               type="password"
               placeholder="Enter your password"
               {...register("password", {
                 required: true,
               })}
             />
-            <Button type="submit" className="w-full">
+            <Button type="submit" className="w-full bg-orange-600">
               Sign in
             </Button>
           </div>
